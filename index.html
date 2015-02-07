@@ -1,12 +1,18 @@
 <!doctype html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html>
 
-<head>
-	<title>Some TEST.</title>
-	<script type="text/javascript" src="js/jquery-2.1.3.min.js"/>
-	<script type="text/javascript" src="js/Real-time-frequency-analysis-of-streaming-audio-data/main.js"/>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+		<link href="css/personalized.css" rel="stylesheet" media="screen">
+		
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/Real-time-frequency-analysis-of-streaming-audio-data/main.js"></script>
+		
 	<style>
 		#example {
 			background-color: #212121;
@@ -57,52 +63,55 @@
 			bottom: 0px;
 		}
 	</style>
+	
+	
 </head>
+
 <body>
+
 	<div id="example">
-	<audio id="player" class="hideIfNoApi" controls="controls" src="http://66.229.165.244:2015/stream2"> </audio>
-	<p class="hideIfNoApi">
-		<strong>Music: </strong>
-		<em>Movement Proposition,</em> Kevin MacLeod (<a href="http://incompetech.com/">incompetech.com</a>)
-	</p>
+		<audio id="player" class="hideIfNoApi" controls="controls" src="http://66.229.165.244:2015/stream2"> </audio>
+		<p class="hideIfNoApi">
+			<strong>Music: </strong>
+		</p>
 
-	<div id="visualisation" class="hideIfNoApi"> 
-	<div style="left: 0%; height: 0px;"></div>
-	<div style="left: 3.125%; height: 0px;"></div>
-	<div style="left: 6.25%; height: 0px;"></div>
-	<div style="left: 9.375%; height: 0px;"></div>
-	<div style="left: 12.5%; height: 0px;"></div>
-	<div style="left: 15.625%; height: 0px;"></div>
-	<div style="left: 18.75%; height: 0px;"></div>
-	<div style="left: 21.875%; height: 0px;"></div>
-	<div style="left: 25%; height: 0px;"></div>
-	<div style="left: 28.125%; height: 0px;"></div>
-	<div style="left: 31.25%; height: 0px;"></div>
-	<div style="left: 34.375%; height: 0px;"></div>
-	<div style="left: 37.5%; height: 0px;"></div>
-	<div style="left: 40.625%; height: 0px;"></div>
-	<div style="left: 43.75%; height: 0px;"></div>
-	<div style="left: 46.875%; height: 0px;"></div>
-	<div style="left: 50%; height: 0px;"></div>
-	<div style="left: 53.125%; height: 0px;"></div>
-	<div style="left: 56.25%; height: 0px;"></div>
-	<div style="left: 59.375%; height: 0px;"></div>
-	<div style="left: 62.5%; height: 0px;"></div>
-	<div style="left: 65.625%; height: 0px;"></div>
-	<div style="left: 68.75%; height: 0px;"></div>
-	<div style="left: 71.875%; height: 0px;"></div>
-	<div style="left: 75%; height: 0px;"></div>
-	<div style="left: 78.125%; height: 0px;"></div>
-	<div style="left: 81.25%; height: 0px;"></div>
-	<div style="left: 84.375%; height: 0px;"></div>
-	<div style="left: 87.5%; height: 0px;"></div>
-	<div style="left: 90.625%; height: 0px;"></div>
-	<div style="left: 93.75%; height: 0px;"></div>
-	<div style="left: 96.875%; height: 0px;"></div>
+		<div id="visualisation" class="hideIfNoApi"> 
+			<div style="left: 0%; height: 0px;"></div>
+			<div style="left: 3.125%; height: 0px;"></div>
+			<div style="left: 6.25%; height: 0px;"></div>
+			<div style="left: 9.375%; height: 0px;"></div>
+			<div style="left: 12.5%; height: 0px;"></div>
+			<div style="left: 15.625%; height: 0px;"></div>
+			<div style="left: 18.75%; height: 0px;"></div>
+			<div style="left: 21.875%; height: 0px;"></div>
+			<div style="left: 25%; height: 0px;"></div>
+			<div style="left: 28.125%; height: 0px;"></div>
+			<div style="left: 31.25%; height: 0px;"></div>
+			<div style="left: 34.375%; height: 0px;"></div>
+			<div style="left: 37.5%; height: 0px;"></div>
+			<div style="left: 40.625%; height: 0px;"></div>
+			<div style="left: 43.75%; height: 0px;"></div>
+			<div style="left: 46.875%; height: 0px;"></div>
+			<div style="left: 50%; height: 0px;"></div>
+			<div style="left: 53.125%; height: 0px;"></div>
+			<div style="left: 56.25%; height: 0px;"></div>
+			<div style="left: 59.375%; height: 0px;"></div>
+			<div style="left: 62.5%; height: 0px;"></div>
+			<div style="left: 65.625%; height: 0px;"></div>
+			<div style="left: 68.75%; height: 0px;"></div>
+			<div style="left: 71.875%; height: 0px;"></div>
+			<div style="left: 75%; height: 0px;"></div>
+			<div style="left: 78.125%; height: 0px;"></div>
+			<div style="left: 81.25%; height: 0px;"></div>
+			<div style="left: 84.375%; height: 0px;"></div>
+			<div style="left: 87.5%; height: 0px;"></div>
+			<div style="left: 90.625%; height: 0px;"></div>
+			<div style="left: 93.75%; height: 0px;"></div>
+			<div style="left: 96.875%; height: 0px;"></div>
+		</div>
+
+		<p class="showIfNoApi">Unable to run this Web Audio API example. <a href="http://caniuse.com/#feat=audio-api">Check browser support</a></p>
+		<img class="showIfNoApi" src="/img/post-2013-02-19-screenshot.png">
 	</div>
-
-	<p class="showIfNoApi">Unable to run this Web Audio API example. <a href="http://caniuse.com/#feat=audio-api">Check browser support</a></p>
-	<img class="showIfNoApi" src="/img/post-2013-02-19-screenshot.png">
-</div>
 </body>
 </html>
