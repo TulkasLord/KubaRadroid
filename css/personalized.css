@@ -1,0 +1,272 @@
+@import url(pygment_trac.css);
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -81px;
+}
+
+#footer, .push {
+	height: 60px;
+}
+
+body {
+	text-align: justify;
+}
+
+#header-background {
+	background: url(../img/header_bg.png) no-repeat, url(../img/noisy-checks.png) repeat;
+	height: 194px;
+	position: relative;
+}
+
+#page-title {
+	font-family: 'Lucida Grande', Calibri, Helvetica, Arial, sans-serif;
+	font-size: 72px;
+	font-weight: bold;
+	color: white;
+	margin: 50px 0 0 60px;
+}
+
+#page-title:hover {
+	text-shadow: #FF9000 0px 0px 10px;
+}
+
+#profile-photo {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+#footer {
+	margin-top: 20px;
+	position: static;
+	line-height: 60px;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#cse-search-box {
+	margin: 24px 0;
+}
+
+#cse-search-box input {
+	width: 100%;
+}
+
+.post-meta {
+	margin: 0px;
+}
+
+.post-meta > li {
+	display: inline-block;
+	padding: 0 16px;
+	color: #909090;
+	font-size: 14px;
+}
+
+.post-comments {
+	background: url(../img/icon-comments.png) 0 50% no-repeat;
+}
+
+.post-date {
+	background: url(../img/icon-date.png) 0 50% no-repeat;
+}
+
+pre, code {
+  font-size: 12px;
+}
+
+pre {
+  line-height: 18px;
+}
+
+.highlight pre, .highlight code {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+blockquote {
+  color: #666;
+}
+
+blockquote p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wrapped-left {
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+
+.wrapped-right {
+  float: right;
+  margin: 20px 0 20px 20px;
+}
+
+.fake-bullet {
+  text-align: center;
+}
+
+.fake-bullet:after {
+  content: ">";
+  font-weight: bold;
+  color: #CCC;
+}
+
+.latest-posts-meta a {
+  color: inherit;
+}
+
+#main-content {
+  margin-bottom: 20px;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	#page-title {
+		font-size: 60px;
+	}
+
+	#header-background {
+		height: 153px;
+	}
+
+	#footer p {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	#page-title {
+		font-size: 48px;
+		margin: 35px 0 0 0;
+	}
+
+	#header-background {
+		height: 153px;
+	}
+}
+
+/* Landscape tablets and down */
+@media (max-width: 979px) {
+	.wrapper {
+		margin: 0 auto -91px;
+	}
+}
+
+#social li {
+	background: url(../img/social_sprite.png) no-repeat;
+	width: 24px;
+	height: 24px;
+	opacity: 0.6;
+	margin: 20px 3px;
+}
+
+#social li:hover {
+	opacity: 1;
+}
+
+#social li a {
+	display: block;
+	height: 24px;
+}
+
+#social span {
+	display: none;
+}
+
+#social #github {
+	background-position: -0px -0px;
+}
+
+#social #twitter {
+	background-position: -0px -34px;
+}
+
+#social #google {
+	background-position: -0px -136px;
+}
+
+#social #newsblur {
+	background-position: -0px -102px;
+}
+
+#social #linkedin {
+	background-position: -0px -170px;
+}
+
+#social #rss {
+	background-position: -0px -68px;
+}
+
+#downloads {
+  padding-left: 30px;
+  background: url('../img/icon_download.png') no-repeat 0% 60%;
+}
+
+.zip_download_link {
+  display: block;
+  float: left;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../img/sprite_download.png) no-repeat bottom left;
+}
+
+.tar_download_link {
+  display: block;
+  float: left;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../img/sprite_download.png) no-repeat bottom right;
+}
+
+.zip_download_link:hover {
+  background: url(../img/sprite_download.png) no-repeat top left;
+}
+
+.tar_download_link:hover {
+  background: url(../img/sprite_download.png) no-repeat top right;
+}
+
+#forkme_banner {
+  margin: 6px;
+  padding: 10px 50px 10px 10px;
+  background: url('../img/blacktocat.png') #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  max-width: 108px;
+}
+
+#forkme_banner:hover {
+  text-decoration: none;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
